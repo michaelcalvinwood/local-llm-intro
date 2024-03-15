@@ -5,7 +5,7 @@ llm = AutoModelForCausalLM.from_pretrained(
 )
 
 prompt_1 = "The capital of India is"
-prompt_2 = "The name of the capital city of India is"
+prompt_2 = "Respond only with the city name and then stop. The precise name for the capital of India is"
 prompt_3 = "What is the name of the capital city of India, she asked. Please only respond with the city name and then stop talking. He answered: "
 
 response_1 = llm(prompt_1)
